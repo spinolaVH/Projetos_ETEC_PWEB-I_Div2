@@ -10,8 +10,49 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6; /*altura entre linhas 1.6x o tamanho da fonte*/
     color: #333; /*cor do texto cinza escuro*/
-    background: linear-gradient(135deg,#667eea 0%, #764ba2 100%); /*gradiente de fundo: 135deg e a direção, de roxo claro para roxo escuro*/
-    padding: 1rem 5%; /*1rem = 16px tamanho padrão da fonte, 5% da largura do container*/
+    background: linear-gradient(135deg, #fdcf02 0%, #836e10 100%); /*gradiente de fundo: 135deg e a direção, de roxo claro para roxo escuro*/
+    min-height: 100vh;/*vh = viewport height, minimo de 100% de altura de tela*/
+}
+header {
+    background-color: rgba(255, 255, 255, 0.45);/* branco com 95% de opacidade(tranparencia)*/
+     padding: 1rem 5%; /*1rem = 16px tamanho padrão da fonte, 5% da largura do container*/
     display: flex; /*ativa o flexbox para layout flexível*/
     align-items: center; /*alinha os itens verticalmente ao centro*/
+    justify-content: space-between;/*esáço entre os itens (logo de um lado e menu de outro)*/
+    flex-wrap: wrap;/*permite quebra de linhas em telas pequenas*/
+    gap: 1rem ;/*espaçamento entre os itens flexiveis*/
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);/*sombra: eixo x, eixo y desfoque de cor 0.1(alpha)*/
+      position: sticky;/*grudar o cabeçalho ao rolar a pagina*/
+      top: 0;/*distancia do topo ao grudar*/
+      z-index: 1000;/*garante que fique acima de outros elementos*/    
 }
+header img{
+     height: 60px;/*altura fixa em pixel*/
+     width: auto;/*largura automáticamente para manter a proporção de acordo com a altura*/
+     transition: trasform o.3s ease;/*transição suave de 3 segundos*/  
+}
+header img:hover{/*hover = quando passa o mause faz alguma coisa*/
+    transform: scale(1.10);/*aumenta em 10% a imagem*/
+
+}
+/*NAVEGAÇÃO nav*/
+nav{
+    display: flex;
+    gap: 2rem;/*representa 32px de espaçamento entre os links*/
+    flex-wrap: wrap ;
+}
+nav a{
+text-decoration: none;/* ele vai remover a linha padrão do link*/
+color: #000000;
+font-weight: 600;/*peso da fonte(semi negrito)*/
+padding: 0.5rem 1rem;/*8px em cima/baixo, 16px nas laterais*/
+border-radius: 25%;/*borda arredondada*/
+transition: all 0.3s ease;/*transição suave para todas as propriedades*/
+position: relative;/*necessário para o pseudo eslemento ::after*/
+}
+   nav a:hover{
+   background-color: #000000;
+   color: white;
+   transform: translate(-2ps);/*move 2px para cima*/
+   box-shadow: - 5px 15px rgba(118, 75, 162, 0.3);/*sombra roxa suave*/
+   }
