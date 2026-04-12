@@ -9,12 +9,12 @@ body{
     /*fontes: Segoe UI, Tahoma, Geneva, Verdana, sans-serif (Segoe UI é a primeira opção, se não tiver, vai tentando as próximas)*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6; /*altura entre linhas 1.6x o tamanho da fonte*/
-    color: #333; /*cor do texto cinza escuro*/
-    background: linear-gradient(135deg, #fdcf02 0%, #836e10 100%); /*gradiente de fundo: 135deg e a direção, de roxo claro para roxo escuro*/
+    color: #fffdfd; /*cor do texto cinza escuro*/
+    background: linear-gradient(135deg, #000000 0%, #000000d8 100%); /*gradiente de fundo: 135deg e a direção, de roxo claro para roxo escuro*/
     min-height: 100vh;/*vh = viewport height, minimo de 100% de altura de tela*/
 }
 header {
-    background-color: rgba(255, 255, 255, 0.45);/* branco com 95% de opacidade(tranparencia)*/
+    background-color: rgba(0, 0, 0, 0.514);/* branco com 95% de opacidade(tranparencia)*/
      padding: 1rem 5%; /*1rem = 16px tamanho padrão da fonte, 5% da largura do container*/
     display: flex; /*ativa o flexbox para layout flexível*/
     align-items: center; /*alinha os itens verticalmente ao centro*/
@@ -43,7 +43,7 @@ nav{
 }
 nav a{
 text-decoration: none;/* ele vai remover a linha padrão do link*/
-color: #000000;
+color: #fffafa;
 font-weight: 600;/*peso da fonte(semi negrito)*/
 padding: 0.5rem 1rem;/*8px em cima/baixo, 16px nas laterais*/
 border-radius: 25%;/*borda arredondada*/
@@ -52,7 +52,7 @@ position: relative;/*necessário para o pseudo eslemento ::after*/
 }
    nav a:hover{
    background-color: #000000;
-   color: white;
+   color: rgb(218, 197, 197);
    transform: translate(-2ps);/*move 2px para cima*/
    box-shadow: - 5px 15px rgba(118, 75, 162, 0.3);/*sombra roxa suave*/
    }
