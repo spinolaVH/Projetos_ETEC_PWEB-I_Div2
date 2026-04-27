@@ -56,3 +56,47 @@ position: relative;/*necessário para o pseudo eslemento ::after*/
    transform: translate(-2ps);/*move 2px para cima*/
    box-shadow: - 5px 15px rgba(118, 75, 162, 0.3);/*sombra roxa suave*/
    }
+   main{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    animation: slideIn 0.5s ease-out;
+   }
+   @keyframes slideIn {
+    from{
+        opacity: 0;
+        transform: translate(30px);
+    }
+   to {
+    opacity: 1;
+    transform: translateY(0);
+   }
+}
+    img, iframe{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+.video-wrapper {
+    position: relative;
+    height: 200px;
+    width: auto;
+}
+    iframe{
+        position: absolute;
+        align-items: center;
+    }
+footer{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    animation: slideIn 0.5s ease-out; 
+}
